@@ -1,0 +1,8 @@
+# Summary
+
+In summary, we covered the topic of superposition, its presence in toy models and in more sophisticated convolution neural networks and language models. 
+We then explored using sparse autoencoders to interpret the features learned by the neurons in a network.
+
+Further resources:
+
+Coming soon
