@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.1)  6 SEP 2024 12:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.1)  25 SEP 2024 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1330,7 +1330,7 @@ chapter 4.
 File: language_models_files/figure-pdf/cell-3-output-1.png Graphic file (type bmp)
 <language_models_files/figure-pdf/cell-3-output-1.png>
 
-Overfull \hbox (10.9457pt too wide) in paragraph at lines 1255--1256
+Overfull \hbox (10.9457pt too wide) in paragraph at lines 1262--1263
 [][] 
  []
 
@@ -1341,11 +1341,11 @@ Overfull \hbox (10.9457pt too wide) in paragraph at lines 1255--1256
 [31]
 
 [32]
-Underfull \vbox (badness 10000) detected at line 1408
+Underfull \vbox (badness 10000) detected at line 1415
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1408
+Underfull \vbox (badness 10000) detected at line 1415
  []
 
 
@@ -1354,7 +1354,7 @@ Underfull \vbox (badness 10000) detected at line 1408
 File: language_models_files/figure-pdf/cell-4-output-2.png Graphic file (type bmp)
 <language_models_files/figure-pdf/cell-4-output-2.png>
 
-Overfull \hbox (10.95459pt too wide) in paragraph at lines 1414--1415
+Overfull \hbox (10.95459pt too wide) in paragraph at lines 1421--1422
 [][] 
  []
 
@@ -1364,14 +1364,14 @@ Overfull \hbox (10.95459pt too wide) in paragraph at lines 1414--1415
 File: language_models_files/figure-pdf/cell-4-output-3.png Graphic file (type bmp)
 <language_models_files/figure-pdf/cell-4-output-3.png>
 
-Overfull \hbox (10.94205pt too wide) in paragraph at lines 1416--1417
+Overfull \hbox (10.94205pt too wide) in paragraph at lines 1423--1424
 [][] 
  []
 
 
 
 [35]
-Overfull \hbox (191.35107pt too wide) in paragraph at lines 1420--1420
+Overfull \hbox (191.35107pt too wide) in paragraph at lines 1427--1427
 []\TU/lmtt/m/n/10.95 Correlations: {[]positive[]: 0.33541225356469684, []negative[]: 0.3389937145819827, []neutral[]: 0.37208967616205857}[] 
  []
 
@@ -1384,17 +1384,17 @@ chapter 5.
 [37
 
 ]
-Overfull \hbox (59.1298pt too wide) in paragraph at lines 1509--1509
+Overfull \hbox (59.1298pt too wide) in paragraph at lines 1516--1516
 []\TU/lmtt/m/n/10.95 /usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_token.py:89: UserWarning:[] 
  []
 
 
-Overfull \hbox (611.00972pt too wide) in paragraph at lines 1509--1509
+Overfull \hbox (611.00972pt too wide) in paragraph at lines 1516--1516
 []\TU/lmtt/m/n/10.95 To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.[] 
  []
 
 
-Overfull \hbox (139.61234pt too wide) in paragraph at lines 1509--1509
+Overfull \hbox (139.61234pt too wide) in paragraph at lines 1516--1516
 []\TU/lmtt/m/n/10.95 Please note that authentication is recommended but still optional to access public models or datasets.[] 
  []
 
@@ -1403,24 +1403,24 @@ Overfull \hbox (139.61234pt too wide) in paragraph at lines 1509--1509
 [38]
 
 [39]
-Underfull \vbox (badness 10000) detected at line 1656
+Underfull \vbox (badness 10000) detected at line 1663
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1656
+Underfull \vbox (badness 10000) detected at line 1663
  []
 
 
 
 [40]
-Overfull \hbox (202.84857pt too wide) in paragraph at lines 1667--1667
+Overfull \hbox (202.84857pt too wide) in paragraph at lines 1674--1674
 []\TU/lmtt/m/n/10.95 Analysis complete. Check []learned_features.png[] and []activation_strengths.png[] for visualizations of 16 features.[] 
  []
 
 File: sparse_autoencoders_files/figure-pdf/cell-7-output-1.png Graphic file (type bmp)
 <sparse_autoencoders_files/figure-pdf/cell-7-output-1.png>
 
-Overfull \hbox (10.95345pt too wide) in paragraph at lines 1697--1698
+Overfull \hbox (10.95345pt too wide) in paragraph at lines 1704--1705
 [][] 
  []
 
@@ -1432,7 +1432,7 @@ Overfull \hbox (10.95345pt too wide) in paragraph at lines 1697--1698
 File: sparse_autoencoders_files/figure-pdf/cell-8-output-1.png Graphic file (type bmp)
 <sparse_autoencoders_files/figure-pdf/cell-8-output-1.png>
 
-Overfull \hbox (10.95016pt too wide) in paragraph at lines 1729--1730
+Overfull \hbox (10.95016pt too wide) in paragraph at lines 1736--1737
 [][] 
  []
 
@@ -1454,7 +1454,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1775 \end{CSLReferences}
+l.1782 \end{CSLReferences}
                            
 Here is how much of TeX's memory you used:
  23992 strings out of 476173
