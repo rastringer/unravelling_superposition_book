@@ -5,3 +5,7 @@ Welcome to the course!
 In the nascent field of AI Safety and Alignment, superposition is a key topic illustrative of the elusive nature of neural networks and how and what they learn, and how we can develop techniques to achieve greater insight.
 
 The following notebooks will explain the concept and introduce you to some of the technical approches in PyTorch we can use to conduct practical research in the field.
+
+If you are a technical practitioner and familiar with Python and PyTorch, the code notebooks highlighting the concept start at 'Introduction to Superposition'.
+
+For policy specialists, please have a look at the 'Superposition for Policy Specialists' section.

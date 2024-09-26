@@ -12,6 +12,7 @@ book:
     - superposition.ipynb
     - language_models.ipynb
     - sparse_autoencoders.ipynb
+    - for_policy_specialists.ipynb
     - summary.qmd
     - references.qmd
 

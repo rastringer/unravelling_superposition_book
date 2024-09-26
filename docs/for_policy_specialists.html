@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introduction – Unravelling Superposition</title>
+<title>5&nbsp; Superposition for Policy Specialists – Unravelling Superposition</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./superposition.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./sparse_autoencoders.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./for_policy_specialists.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Superposition for Policy Specialists</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./for_policy_specialists.html" class="sidebar-item-text sidebar-link">
+  <a href="./for_policy_specialists.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Superposition for Policy Specialists</span></span></a>
   </div>
 </li>
@@ -164,7 +164,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-does-superposition-occur" id="toc-why-does-superposition-occur" class="nav-link active" data-scroll-target="#why-does-superposition-occur"><span class="header-section-number">1.0.1</span> Why does superposition occur?</a></li>
+  <li><a href="#what-is-superposition" id="toc-what-is-superposition" class="nav-link active" data-scroll-target="#what-is-superposition"><span class="header-section-number">5.0.1</span> What is superposition?</a></li>
+  <li><a href="#the-interpretability-challenge" id="toc-the-interpretability-challenge" class="nav-link" data-scroll-target="#the-interpretability-challenge"><span class="header-section-number">5.0.2</span> The interpretability challenge</a></li>
+  <li><a href="#privacy" id="toc-privacy" class="nav-link" data-scroll-target="#privacy"><span class="header-section-number">5.0.3</span> Privacy</a></li>
+  <li><a href="#bias-and-fairness" id="toc-bias-and-fairness" class="nav-link" data-scroll-target="#bias-and-fairness"><span class="header-section-number">5.0.4</span> Bias and fairness</a></li>
+  <li><a href="#regulatory-challenges" id="toc-regulatory-challenges" class="nav-link" data-scroll-target="#regulatory-challenges"><span class="header-section-number">5.0.5</span> Regulatory challenges</a></li>
+  <li><a href="#avenues-to-improve-interpretability" id="toc-avenues-to-improve-interpretability" class="nav-link" data-scroll-target="#avenues-to-improve-interpretability"><span class="header-section-number">5.1</span> Avenues to improve interpretability</a>
+  <ul class="collapse">
+  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization"><span class="header-section-number">5.1.1</span> Visualization</a></li>
+  <li><a href="#proving-and-ablation" id="toc-proving-and-ablation" class="nav-link" data-scroll-target="#proving-and-ablation"><span class="header-section-number">5.1.2</span> Proving and ablation</a></li>
+  <li><a href="#disentanglement" id="toc-disentanglement" class="nav-link" data-scroll-target="#disentanglement"><span class="header-section-number">5.1.3</span> Disentanglement</a></li>
+  <li><a href="#formal-theories-of-representation" id="toc-formal-theories-of-representation" class="nav-link" data-scroll-target="#formal-theories-of-representation"><span class="header-section-number">5.1.4</span> Formal theories of representation</a></li>
+  <li><a href="#explainable-ai" id="toc-explainable-ai" class="nav-link" data-scroll-target="#explainable-ai"><span class="header-section-number">5.1.5</span> Explainable AI</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.2</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -173,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Superposition for Policy Specialists</span></h1>
 </div>
 
 
@@ -190,28 +203,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://colab.research.google.com/github/rastringer/unraveling_superposition/blob/main/introduction.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
-<p>In the field of AI Alignment, ‘Interpretability’ is the study of understanding neural networks; what they learn from training data and how they are forming their predictions.</p>
-<p>The first step in interpretability is typically to understand the features a neuron is learning from. There would be no mystery if neurons corresponded to verifiable input features. For example, if a neuron fires on dog tails, or on Korean poetry. Since neural networks incorporate non-linearities, this is not always the case, and we will see how small a fraction of features we are able to extract in relation to the number of neurons in a network. This phenonemon is known as ‘superposition’.</p>
-<p>Let’s consider the canonical MNIST machine learning example. MNIST is a dataset of 60,000 training images of handwritten digits, 0-9 (10 classes). Each image is 28x28 pixels, so 784 pixels in total.</p>
-<p>In the most interpretable scenario, each neuron in a neural network would correspond to a specific feature of the input, for example:</p>
-<ul>
-<li>loops (for 0, 6, 8, 9 etc)</li>
-<li>straight lines (1, 4, 7)</li>
-<li>curves (2, 3, 5)</li>
-</ul>
-<p>In the image below, we see the original handwritten digits, and a heatmap showing the regions of the digits that had high predictive value. Notice for example how the criss-cross of the eight, which is unique to the digit, is highlighted with blue (strong correlation), and similarly, the curve of the five.</p>
-<p><img title="MNIST" alt="Feature attribution in MNIST" src="./images/mnist.png" style="height:300px;"></p>
-<p>In practice, however, neural nets don’t learn clean, one-to-one mappings between neurond and features.</p>
-<section id="why-does-superposition-occur" class="level3" data-number="1.0.1">
-<h3 data-number="1.0.1" class="anchored" data-anchor-id="why-does-superposition-occur"><span class="header-section-number">1.0.1</span> Why does superposition occur?</h3>
-<ul>
-<li><p>Efficiency: networks often have fewer parameters than the number of features they need to represent. In the case of large language models, for example, this means networks do not have to extend to every last possible feature of language found in vast text corpora.</p></li>
-<li><p>Generalization: overlapping representations help generalize to new data.</p></li>
-<li><p>Non-linearity: this allows for complex, overlapping representations. For example, the combination of features in different neurons, sushi in one and recipie quantities in another, can help formulate accurate predictions.</p></li>
-</ul>
-<p>We will see in this short course that neural networks often represent more features than they have dimensions, and mix different, unrelated concepts in single neurons. For example, a neuron in a language model could fire in response to inputs as varied as code in Haskell, Spanish poetry and vehicle descriptions.</p>
-<p>Let’s move on to the next chapter to examine this fascinating field and look closely at what we can see neural networks are doing, and what we yet cannot.</p>
+<p>In this section, we will cover what should be helpful for policy staff to know about superposition.</p>
+<section id="what-is-superposition" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="what-is-superposition"><span class="header-section-number">5.0.1</span> What is superposition?</h3>
+<p>Superposition in neural networks concerns how these systems efficiently represent and process multiple concepts or features within the same set of neurons or parameters. Unlike traditional computer programs where every piece of information typically has a specific address in memory, neural nets distribute this information across their entire architecture. Information and its storage overlaps, and this helps the network learn in greater depth from its inputs.</p>
+<p>This feature allows neural nets to be efficieint in their use of the computational resources they employ to help them understand input data. The networks can understand input information with far more numerous inputs than there are neurons to make sense of them.</p>
+</section>
+<section id="the-interpretability-challenge" class="level3" data-number="5.0.2">
+<h3 data-number="5.0.2" class="anchored" data-anchor-id="the-interpretability-challenge"><span class="header-section-number">5.0.2</span> The interpretability challenge</h3>
+<p>Superposition is of interest to both research scientists and policy experts because it presents interpretability challenges, namely the overlapping of information makes it difficult to isolate and understand individual concepts or how a network arrives at a prediction based on input data. This is often refered to as the ‘black box’ nature of AI systems. Superposition helps robust AI systems to generalize from training data to new inputs. However, it can also cause unexpected behaviours when encountering scenarios significantly different to its training data.</p>
+</section>
+<section id="privacy" class="level3" data-number="5.0.3">
+<h3 data-number="5.0.3" class="anchored" data-anchor-id="privacy"><span class="header-section-number">5.0.3</span> Privacy</h3>
+<p>Since information is stored in a distributed fashion across the network, privacy concerns arise since it isn’t straightforward to either pinpoint where a network keeps specific information, or how to delete it. Information entangled with other concepts can be difficult to alter or remove.</p>
+</section>
+<section id="bias-and-fairness" class="level3" data-number="5.0.4">
+<h3 data-number="5.0.4" class="anchored" data-anchor-id="bias-and-fairness"><span class="header-section-number">5.0.4</span> Bias and fairness</h3>
+<p>Since biased associations can be subtly encoded across many parameters rather than in easily identifiable locations, superposition can make identifying and mitigating bias challenging.</p>
+</section>
+<section id="regulatory-challenges" class="level3" data-number="5.0.5">
+<h3 data-number="5.0.5" class="anchored" data-anchor-id="regulatory-challenges"><span class="header-section-number">5.0.5</span> Regulatory challenges</h3>
+<p>All of the above make regulation difficult, since there is no straightforward relationship between inputs and outputs.</p>
+</section>
+<section id="avenues-to-improve-interpretability" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="avenues-to-improve-interpretability"><span class="header-section-number">5.1</span> Avenues to improve interpretability</h2>
+<section id="visualization" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="visualization"><span class="header-section-number">5.1.1</span> Visualization</h3>
+<p>We have convered some techniques in this course to apply visualizations to detect and understand superposition.</p>
+</section>
+<section id="proving-and-ablation" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="proving-and-ablation"><span class="header-section-number">5.1.2</span> Proving and ablation</h3>
+<p>Techniques to isolate specific or groups of neurons to understand behaviour. For excellent examples, see Anthropic’s work: * <a href="https://transformer-circuits.pub/2023/monosemantic-features/index.html">Towards Monosemanticity</a> * and <a href="https://transformer-circuits.pub/2023/monosemantic-features/vis/a1.html">visualization</a></p>
+</section>
+<section id="disentanglement" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="disentanglement"><span class="header-section-number">5.1.3</span> Disentanglement</h3>
+<p>Research focused on training networks to encourage more separated, interpretable representations. Please see <a href="https://arxiv.org/pdf/2212.14855">Disentangled Explanations of Neural Network Predictions</a>.</p>
+</section>
+<section id="formal-theories-of-representation" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="formal-theories-of-representation"><span class="header-section-number">5.1.4</span> Formal theories of representation</h3>
+<p>Using mathematical frameworks to decribe how information is encoded and processed could improve understanding.</p>
+</section>
+<section id="explainable-ai" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="explainable-ai"><span class="header-section-number">5.1.5</span> Explainable AI</h3>
+<p>Developing tools to explain how neural nets are making decisions.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.2</span> Conclusion</h2>
+<p>Superposition is a fundamental characteristic that affords neural nets the power and complexity to make predictions and generations based on often voluminous input data. For policy specialists, understanding this charactersitic of AI systems helps inform the development of governance strategies to mitigate ethical and societal impact concerns of non-deterministic systems.</p>
 
 
 </section>
@@ -639,13 +678,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./sparse_autoencoders.html" class="pagination-link" aria-label="Interpreting with Sparse Autoencoders">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interpreting with Sparse Autoencoders</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./superposition.html" class="pagination-link" aria-label="Introduction to Superposition">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Superposition</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
