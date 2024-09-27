@@ -3,6 +3,10 @@
 In summary, we covered the topic of superposition, its presence in toy models and in more sophisticated convolution neural networks and language models. 
 We then explored using sparse autoencoders to interpret the features learned by the neurons in a network.
 
-Further resources:
+## References
 
-Coming soon
+* [Toy models of superposition](https://transformer-circuits.pub/2022/toy_model/index.html) by Nelson Elhage, Tristan Hume and Catherine Olsson et al. (2022)
+
+* [Towards Monosemanticity: Decomposing Language Models With Dictionary Learning](https://transformer-circuits.pub/2023/monosemantic-features/index.html) by Trenton Bricken, Adly Templeton and Joshua Batson et al. (2023)
+
+* [Polysemanticity and Capacity in Neural Networks](https://arxiv.org/pdf/2210.01892) by Adam Scherlis, Kshitij Sachan, Adam S. Jermyn, Joe Benton and Buck Shlegeris
