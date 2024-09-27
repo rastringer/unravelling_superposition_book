@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><a href="https://colab.research.google.com/github/rastringer/unraveling_superposition/blob/main/introduction.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 <p>In the field of AI Alignment, ‘Interpretability’ is the study of understanding neural networks; what they learn from training data and how they are forming their predictions.</p>
-<p>The first step in interpretability is typically to understand the features a neuron is learning from. There would be no mystery if neurons corresponded to verifiable input features. For example, if a neuron fires on dog tails, or on Korean poetry. Since neural networks incorporate non-linearities, this is not always the case, and we will see how small a fraction of features we are able to extract in relation to the number of neurons in a network. This phenonemon is known as ‘superposition’.</p>
+<p>The first step in interpretability is typically to understand the features a neuron is learning from. There would be no mystery if neurons corresponded to verifiable input features. For example, if a neuron fires on dog tails, or on Korean poetry. Since neural networks incorporate non-linearities, this is not always the case, and we will see how small a fraction of features we are able to extract in relation to the number of neurons in a network. This phenonemon is known as ‘superposition’<sup>1</sup>.</p>
 <p>Let’s consider the canonical MNIST machine learning example. MNIST is a dataset of 60,000 training images of handwritten digits, 0-9 (10 classes). Each image is 28x28 pixels, so 784 pixels in total.</p>
 <p>In the most interpretable scenario, each neuron in a neural network would correspond to a specific feature of the input, for example:</p>
 <ul>
@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>In the image below, we see the original handwritten digits, and a heatmap showing the regions of the digits that had high predictive value. Notice for example how the criss-cross of the eight, which is unique to the digit, is highlighted with blue (strong correlation), and similarly, the curve of the five.</p>
 <p><img title="MNIST" alt="Feature attribution in MNIST" src="./images/mnist.png" style="height:300px;"></p>
-<p>In practice, however, neural nets don’t learn clean, one-to-one mappings between neurond and features.</p>
+<p>In practice, however, neural nets don’t learn clean, one-to-one mappings between neurons and features.</p>
 <section id="why-does-superposition-occur" class="level3" data-number="1.0.1">
 <h3 data-number="1.0.1" class="anchored" data-anchor-id="why-does-superposition-occur"><span class="header-section-number">1.0.1</span> Why does superposition occur?</h3>
 <ul>
@@ -206,6 +206,9 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>We will see in this short course that neural networks often represent more features than they have dimensions, and mix different, unrelated concepts in single neurons. For example, a neuron in a language model could fire in response to inputs as varied as code in Haskell, Spanish poetry and vehicle descriptions.</p>
 <p>Let’s move on to the next chapter to examine this fascinating field and look closely at what we can see neural networks are doing, and what we yet cannot.</p>
+<ol type="1">
+<li>The phenomenon is also know as ‘polysemanticicy’. We will use the term ‘superposition’ in this course.</li>
+</ol>
 
 
 </section>
